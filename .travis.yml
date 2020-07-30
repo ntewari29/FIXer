@@ -1,0 +1,5 @@
+language: java
+sudo: false # faster builds
+
+script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn test
