@@ -27,6 +27,13 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 * FIX comparison.
 * Support more delimiters.
 
+### Usage
+* What you would simply want to do is to invoke ```translate``` method in ```Fixer```, the method accepts raw FIX as a parameter and returns the translated message as a String.
+
+```
+Fixer.translate(<Your RAW FIX msg>)
+```
+
 ## Bugs and Feedback
 For bugs, feedbacks, questions and discussions do use [Github Issues](https://github.com/ntewari29/FIXer/issues).
 
