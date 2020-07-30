@@ -20,11 +20,12 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 #### FIXer is aimed at simplifying what has seemed tedious so far. 
 
 ### Features Offered 
-* Translating raw FIX into human readable format.
+* Translating raw FIX into human readable format supported delimiter ';'.
 
 ### Upcoming Features
 * Translating values in constant tags like 20, 21, 35, etc..
 * FIX comparison.
+* Support more delimiters.
 
 ## Bugs and Feedback
 For bugs, feedbacks, questions and discussions do use [Github Issues](https://github.com/ntewari29/FIXer/issues).
