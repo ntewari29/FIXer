@@ -1,6 +1,8 @@
 import org.fix.parser.Fixer;
 import org.junit.Test;
 
+import java.util.Map;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -34,5 +36,14 @@ public class FixerTests {
                         "ClientID : 12345\n" +
                         "OrdType : 2\n" +
                         "5150 : Dummy Tag2\n"));
+    }
+
+    @Test
+    public void trial() {
+        String msg1 = "35=D;49=Sender;56=Target;11=OrderID_1;109=12345;55=INFY;207=NS;40=2;11111=Dummy Tag1;5150=Dummy Tag2;";
+        String msg2 = "35=D;49=Sender;56=Target;11=OrderID_1;109=12345;55=INFY;207=NS;40=2;11111=Dummy Tag1;5150=Dummy Tag2;";
+        Map m1 = Fixer.convertToAMap(msg1);
+        Map m2 = Fixer.convertToAMap(msg2);
+        assertThat(Fixer.compareFix(m1, m2), is(""));
     }
 }
