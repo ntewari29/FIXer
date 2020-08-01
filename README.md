@@ -39,7 +39,9 @@ Fixer.translate(<Your RAW FIX msg>)
 ```
 * How to compare two FIX messages:
 
-Invoke ```compareFix(msg1, msg2)``` method in ```Fixed```, be advised that ```compareFix``` accepts messages as a Map, users can convert FIX msgs as Strings into a Map using ```convertToAMap```.
+Invoke ```compareFix(map1, map2)``` method in ```Fixer```, be advised that ```compareFix``` accepts messages as a Map, users can convert FIX msgs as Strings into a Map using ```convertToAMap```.
+
+```Fixer.compareFix(Fixer.convertToAMap(msg1), Fixer.convertToAMap(msg2))```
 
 ## Bugs and Feedback
 For bugs, feedbacks, questions and discussions do use [Github Issues](https://github.com/ntewari29/FIXer/issues).
