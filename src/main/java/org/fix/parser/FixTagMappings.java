@@ -8,7 +8,7 @@ class FixTagMappings {
     private final String tagIDs;
     private final String tagName;
 
-    private Map<String, String> tagNameMappings;
+    private final Map<String, String> tagNameMappings;
 
     FixTagMappings() {
         tagIDs = null;
