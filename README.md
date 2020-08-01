@@ -31,12 +31,14 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 ### Usage
 * Build a package and import it in your project, on command line execute ```mvn package``` import ```FIXer-1.0.0.jar``` and get going.
 * How to translate a FIX message:
+
 Invoke ```translate``` method in ```Fixer```, the method accepts raw FIX as a parameter and returns the translated message as a String.
 
 ```
 Fixer.translate(<Your RAW FIX msg>)
 ```
 * How to compare two FIX messages:
+
 Invoke ```compareFix(msg1, msg2)``` method in ```Fixed```, be advised that ```compareFix``` accepts messages as a Map, users can convert FIX msgs as Strings into a Map using ```convertToAMap```.
 
 ## Bugs and Feedback
