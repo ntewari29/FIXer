@@ -1,5 +1,5 @@
-# FIX Translator a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
-FIXer is a simple FIX Utility that is aimed at simplifying FIX comparisons and FIX translations which is focused but not limited to enabling greater sense of readability on raw FIX messages and reliability in a way that minimizes the error prone method of eyeballing & FIX dictionary navigations.
+# FIX Parser a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
+FIXer is a simple FIX Utility that is aimed at simplifying FIX comparisons and FIX translations which is focused but not limited to enabling greater sense of readability on raw FIX messages and reliability in a way that minimizes the error prone method of eyeballing & navigating through FIX dictionary.
 
 ### Introduction
 The Financial Information eXchange (FIX) protocol is an electronic communications protocol initiated in 1992 for international real-time exchange of information related to financial security transactions and markets. 
@@ -26,6 +26,13 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 * Translating values in constant tags like 20, 21, 35, etc..
 * FIX comparison.
 * Support more delimiters.
+
+### Usage
+* What you would simply want to do is to invoke ```translate``` method in ```Fixer```, the method accepts raw FIX as a parameter and returns the translated message as a String.
+
+```
+Fixer.translate(<Your RAW FIX msg>)
+```
 
 ## Bugs and Feedback
 For bugs, feedbacks, questions and discussions do use [Github Issues](https://github.com/ntewari29/FIXer/issues).
