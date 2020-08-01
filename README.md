@@ -29,7 +29,7 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 * Support more delimiters.
 
 ### Usage
-* Build a package and use it on command line run ```mvn package``` import ```FIXer-1.0.0.jar``` and get going.
+* Build a package and import it in your project, on command line execute ```mvn package``` import ```FIXer-1.0.0.jar``` and get going.
 * How to translate a FIX message:
 Invoke ```translate``` method in ```Fixer```, the method accepts raw FIX as a parameter and returns the translated message as a String.
 
