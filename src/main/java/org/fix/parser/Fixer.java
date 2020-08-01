@@ -49,12 +49,12 @@ public class Fixer {
                 String key = entry.getKey();
                 String v1 = entry.getValue();
                 String v2 = m2.get(key);
-                if (!v1.equals(v2)){
-                    response.append("Value " + v1 + " mismatched with " + v2 + " for the FIX Tag Name " + entry.getKey() + "\n");
+                if (!v1.equals(v2)) {
+                    response.append("Expected " + "'" + v1 + "'" + " v/s Actual " + "'" + v2 + "'" + " for the FIX Tag " + entry.getKey() + "\n");
                 }
             }
         } else {
-            response.append(m1.keySet() + " don't match " + m2.keySet());
+            response.append("Expected \n" + m1.keySet() + "\n" + " v/s Actual\n" + m2.keySet());
         }
         return String.valueOf(response);
     }
