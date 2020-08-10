@@ -1,4 +1,4 @@
-# FIX Parser a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
+# FIX Parser a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
 FIXer is a simple FIX Utility that is aimed at simplifying FIX comparisons and FIX translations which is focused but not limited to enabling greater sense of readability on raw FIX messages and reliability in a way that minimizes the error prone method of eyeballing & navigating through FIX dictionary.
 
 ### Introduction
@@ -20,13 +20,14 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 #### FIXer is aimed at simplifying what has seemed tedious so far. 
 
 ### Features Offered 
-* Translating raw FIX into human readable format supported delimiter ';'.
+* Translating raw FIX into human readable format.
+* List of supported delimiter's ```;``` and ```|``` and ```^A```
 * Simple FIX comparison.
 
 ### Upcoming Features
 * Translating values in constant tags like 20, 21, 35, etc..
 * Complex FIX comparison, ability for users to ignore certains tags on asserts.
-* Support more delimiters.
+* Support for Repeating Groups.
 
 ### Usage
 * Build a package and import it in your project, on command line execute ```mvn package``` import ```FIXer-1.0.0.jar``` and get going.
