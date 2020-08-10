@@ -1,4 +1,4 @@
-# FIX Parser a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
+# FIX Parser a.k.a. FIXer [![Generic badge](https://img.shields.io/badge/Version-1.0.0-Green.svg)](https://github.com/ntewari29/FIXer) [![Build Status](https://travis-ci.org/ntewari29/FIXer.svg?branch=master)](https://travis-ci.org/ntewari29/FIXer) [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/ntewari29/FIXer/network)
 FIXer is a simple FIX Utility that is aimed at simplifying FIX comparisons and FIX translations which is focused but not limited to enabling greater sense of readability on raw FIX messages and reliability in a way that minimizes the error prone method of eyeballing & navigating through FIX dictionary.
 
 ### Introduction
