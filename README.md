@@ -20,7 +20,7 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 #### FIXer is aimed at simplifying what has seemed tedious so far. 
 
 ### Features Offered 
-* Translating raw FIX into human readable format supported delimiter ';'.
+* Translating raw FIX into human readable format supported delimiter's ';' and '|' and '^A'.
 * Simple FIX comparison.
 
 ### Upcoming Features
