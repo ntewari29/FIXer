@@ -24,6 +24,30 @@ public class FixerTests {
     }
 
     @Test
+    public void verifyThatFixerIsAbleToParseRawFixMessagesWithDifferentDelimiters() {
+        String msg1 = "35=D|49=Sender|56=Target|11=OrderID_1|109=12345|55=INFY|207=NS|40=2|";
+        String msg2 = "35=D^A49=Sender^A56=Target^A11=OrderID_1^A109=12345^A55=INFY^A207=NS^A40=2^A";
+        assertThat(Fixer.translate(msg1),
+                is("ClOrdID = OrderID_1\n" +
+                        "Symbol = INFY\n" +
+                        "TargetCompID = Target\n" +
+                        "MsgType = D\n" +
+                        "SenderCompID = Sender\n" +
+                        "SecurityExchange = NS\n" +
+                        "ClientID = 12345\n" +
+                        "OrdType = 2\n"));
+        assertThat(Fixer.translate(msg2),
+                is("ClOrdID = OrderID_1\n" +
+                        "Symbol = INFY\n" +
+                        "TargetCompID = Target\n" +
+                        "MsgType = D\n" +
+                        "SenderCompID = Sender\n" +
+                        "SecurityExchange = NS\n" +
+                        "ClientID = 12345\n" +
+                        "OrdType = 2\n"));
+    }
+
+    @Test
     public void verifyThatFixerReturnsTagIdsIfItDoesNotMatchFixTagMappings() {
         String msg1 = "35=D;49=Sender;56=Target;11=OrderID_1;109=12345;55=INFY;207=NS;40=2;11111=Dummy Tag1;5150=Dummy Tag2;";
         assertThat(Fixer.translate(msg1),
@@ -57,7 +81,7 @@ public class FixerTests {
                 is(""));
     }
 
-    @Test @Ignore
+    @Test
     public void verifyThatCompareFIXComplainsIfTheTagsInTwoMsgsDontMatch() {
         Map<String, String> m1 = Fixer.convertToAMap("8=FIX.4.2;9=176;35=8;49=PHLX;56=PERS;52=20071123-05:30:00.000;11=ATOMNOCCC9990900;20=3;150=E;39=E;55=MSFT;167=CS;54=1;38=15;40=2;44=15;58=PHLX EQUITY TESTING;59=0;47=C;32=0;31=0;151=15;14=0;6=0;10=128;");
         Map<String, String> m2 = Fixer.convertToAMap("8=FIX.4.2;9=176;35=8;49=PHLX;56=PERS;11=ATOMNOCCC9990900;20=3;150=E;39=E;167=CS;54=1;38=15;40=2;58=PHLX EQUITY TESTING;59=0;47=C;32=0;31=0;151=15;14=0;6=0;10=128;");

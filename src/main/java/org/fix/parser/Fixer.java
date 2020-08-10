@@ -13,7 +13,7 @@ public class Fixer {
 
     public static Map<String, String> split(String msg) {
         Map<String, String> splitMsg = new HashMap<String, String>();
-        String[] ctx = msg.split("=|\\;");
+        String[] ctx = msg.split("=|\\;|\\||\\^A");
         for (int i = 0; i < ctx.length; i += 2) {
             splitMsg.put(ctx[i].trim(), ctx[i + 1].trim());
         }
