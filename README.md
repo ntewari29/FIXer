@@ -27,7 +27,7 @@ The Financial Information eXchange (FIX) protocol is an electronic communication
 ### Upcoming Features
 * Translating values in constant tags like 20, 21, 35, etc..
 * Complex FIX comparison, ability for users to ignore certains tags on asserts.
-* Support more delimiters.
+* Support for Repeating Groups.
 
 ### Usage
 * Build a package and import it in your project, on command line execute ```mvn package``` import ```FIXer-1.0.0.jar``` and get going.
